@@ -17,11 +17,13 @@
   margin-top: 10px;
   width: 15%;
   height: 40px;
+  min-width: 125px;
 }
 
 .App .MuiTableContainer-root {
   width: 50%;
   margin: 25px auto;
+  min-width: 400px;
 }
 
 .App .MuiTableCell-head {
@@ -49,14 +51,15 @@
   border: 2px solid black;
   border-radius: 4px;
   background-color: white;
-  width: 50%;
-	height: 30%;
+  width: 40%;
+	height: 250px;
 	position: absolute;
 	top:35%;
 	bottom: 65%;
 	left: 0;
 	right: 0;
 	margin: auto;
+  min-width: 400px;
 }
 
 .modal-container h1 {
@@ -74,8 +77,5 @@
 .modal-container .actions button {
   margin: 0 5px;
   width: 25%;
-}
-
-div.clearer {
-  clear: both;
+  padding: 10px;
 }

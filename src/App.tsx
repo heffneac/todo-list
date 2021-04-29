@@ -92,6 +92,7 @@ const App = () => {
       <h1>To-Do List</h1>
       <div className="header-actions">
         <TextField
+          data-testid="search-bar"
           label="Search"
           variant="outlined"
           className="search-bar"
@@ -107,7 +108,6 @@ const App = () => {
           Add Item
         </Button>
       </div>
-      <div className="clearer" />
       {items.length > 0 ? (
         <TableContainer className="table-container" component={Paper}>
           <Table>
@@ -152,9 +152,10 @@ const App = () => {
       <Modal open={open} onClose={handleClose}>
         {
           <div className="modal-container">
-            <h1>Add New Todo Item</h1>
+            <h1>Add Item</h1>
             <form onSubmit={onSubmit}>
               <TextField
+                data-testid="name"
                 label="Todo Item Name"
                 variant="outlined"
                 className="item-name"
@@ -162,6 +163,7 @@ const App = () => {
               />
               <div className="actions">
                 <Button
+                  data-testid="add"
                   disabled={!formState.isValid}
                   type="submit"
                   color="primary"
