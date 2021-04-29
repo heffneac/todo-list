@@ -173,7 +173,6 @@ const App = () => {
                 </Button>
                 <Button
                   onClick={handleClose}
-                  color="primary"
                   variant="contained"
                 >
                   Cancel
