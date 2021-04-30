@@ -20,19 +20,6 @@
   min-width: 125px;
 }
 
-.App .filters {
-  display: flex;
-  margin: auto;
-  width: 50%;
-  margin-top: 20px;
-}
-
-.App .MuiChip-root {
-  width: 100px;
-  cursor: pointer;
-  margin-right: 10px;
-}
-
 .App .MuiTableContainer-root {
   width: 50%;
   margin: 25px auto;
